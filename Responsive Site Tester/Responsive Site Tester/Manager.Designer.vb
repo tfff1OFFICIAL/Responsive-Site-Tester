@@ -22,6 +22,7 @@ Partial Class Manager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Manager))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.changeloc = New System.Windows.Forms.Button()
@@ -128,7 +129,7 @@ Partial Class Manager
         'Manual
         '
         Me.Manual.AutoSize = True
-        Me.Manual.Location = New System.Drawing.Point(12, 248)
+        Me.Manual.Location = New System.Drawing.Point(12, 259)
         Me.Manual.Name = "Manual"
         Me.Manual.Size = New System.Drawing.Size(63, 17)
         Me.Manual.TabIndex = 8
@@ -138,7 +139,7 @@ Partial Class Manager
         'width
         '
         Me.width.Enabled = False
-        Me.width.Location = New System.Drawing.Point(27, 282)
+        Me.width.Location = New System.Drawing.Point(30, 282)
         Me.width.Maximum = New Decimal(New Integer() {50000, 0, 0, 0})
         Me.width.Name = "width"
         Me.width.Size = New System.Drawing.Size(120, 20)
@@ -147,7 +148,7 @@ Partial Class Manager
         'height
         '
         Me.height.Enabled = False
-        Me.height.Location = New System.Drawing.Point(26, 298)
+        Me.height.Location = New System.Drawing.Point(29, 308)
         Me.height.Maximum = New Decimal(New Integer() {50000, 0, 0, 0})
         Me.height.Name = "height"
         Me.height.Size = New System.Drawing.Size(120, 20)
@@ -156,7 +157,7 @@ Partial Class Manager
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(152, 279)
+        Me.Label3.Location = New System.Drawing.Point(155, 279)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(18, 13)
         Me.Label3.TabIndex = 11
@@ -165,7 +166,7 @@ Partial Class Manager
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(152, 305)
+        Me.Label4.Location = New System.Drawing.Point(155, 318)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(18, 13)
         Me.Label4.TabIndex = 12
@@ -174,7 +175,7 @@ Partial Class Manager
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(9, 274)
+        Me.Label5.Location = New System.Drawing.Point(12, 284)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(14, 13)
         Me.Label5.TabIndex = 14
@@ -183,7 +184,7 @@ Partial Class Manager
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(9, 300)
+        Me.Label6.Location = New System.Drawing.Point(13, 310)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(14, 13)
         Me.Label6.TabIndex = 15
@@ -267,6 +268,7 @@ Partial Class Manager
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Manager"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Manager"

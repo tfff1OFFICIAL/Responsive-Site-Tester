@@ -24,8 +24,10 @@
             Form1.Fasterbrowser1.Width = width.Value
             Form1.Fasterbrowser1.Height = height.Value
         ElseIf fullscreen.Checked = True Then
-            Form1.Fasterbrowser1.Width = Form1.Width
-            Form1.Fasterbrowser1.Height = Form1.Height
+            Form1.Width = My.Computer.Screen.Bounds.Width
+            Form1.Height = My.Computer.Screen.Bounds.Height
+            Form1.Fasterbrowser1.Width = My.Computer.Screen.Bounds.Width
+            Form1.Fasterbrowser1.Height = My.Computer.Screen.Bounds.Height
         ElseIf iphonePortrait.Checked = True Then
             Form1.Fasterbrowser1.Width = 310
             Form1.Fasterbrowser1.Height = 352
@@ -49,5 +51,9 @@
 
     Private Sub Manager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         fullscreen.Text = "Full Screen (" + Form1.Width.ToString + " x " + Form1.Height.ToString + ")"
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        credits.Show()
     End Sub
 End Class
