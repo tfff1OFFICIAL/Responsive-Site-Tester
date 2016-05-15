@@ -41,6 +41,7 @@ Partial Class Manager
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ipadPortrait = New System.Windows.Forms.RadioButton()
         Me.ipadLandscape = New System.Windows.Forms.RadioButton()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         CType(Me.width, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.height, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -228,6 +229,16 @@ Partial Class Manager
         Me.ipadLandscape.Text = "iPad Landscape (1010 x 660)"
         Me.ipadLandscape.UseVisualStyleBackColor = True
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(172, 92)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(15, 13)
+        Me.LinkLabel1.TabIndex = 20
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "(i)"
+        '
         'Manager
         '
         Me.AcceptButton = Me.applybtn
@@ -235,6 +246,7 @@ Partial Class Manager
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.closebtn
         Me.ClientSize = New System.Drawing.Size(199, 369)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.ipadLandscape)
         Me.Controls.Add(Me.ipadPortrait)
         Me.Controls.Add(Me.Label7)
@@ -285,4 +297,5 @@ Partial Class Manager
     Friend WithEvents Label7 As Label
     Friend WithEvents ipadPortrait As RadioButton
     Friend WithEvents ipadLandscape As RadioButton
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
