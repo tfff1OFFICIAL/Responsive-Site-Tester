@@ -13,5 +13,18 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Manager.Show()
+        Fasterbrowser1.Width = Width
+        Fasterbrowser1.Height = Height
+        Fasterbrowser1.Navigate(Application.StartupPath + "\startup.html")
+    End Sub
+
+    Private Sub Fasterbrowser1_Navigated(sender As Object, e As GeckoNavigatedEventArgs) Handles Fasterbrowser1.Navigated
+        Enabled = True
+        Manager.Enabled = True
+    End Sub
+
+    Private Sub Fasterbrowser1_Navigating(sender As Object, e As Events.GeckoNavigatingEventArgs) Handles Fasterbrowser1.Navigating
+        Enabled = False
+        Manager.Enabled = False
     End Sub
 End Class

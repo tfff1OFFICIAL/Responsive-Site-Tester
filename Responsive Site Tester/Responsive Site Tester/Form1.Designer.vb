@@ -48,5 +48,5 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Fasterbrowser1 As Fasterbrowser
+    Public WithEvents Fasterbrowser1 As Fasterbrowser
 End Class

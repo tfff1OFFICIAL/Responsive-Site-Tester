@@ -90,6 +90,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="URLPicker.Designer.vb">
+      <DependentUpon>URLPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="URLPicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Manager.Designer.vb">
       <DependentUpon>Manager.vb</DependentUpon>
     </Compile>
@@ -115,6 +121,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="URLPicker.resx">
+      <DependentUpon>URLPicker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.vb</DependentUpon>
